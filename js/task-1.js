@@ -1,19 +1,8 @@
-const a = 10;
-let b = 5;
-const c = false;
-const d = 5;
-b = '10';
-const set = a + b - c + d;
+function makeTransaction(quantity, pricePerDroid) {
+  const totalPrice = quantity * pricePerDroid;
+  return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
+}
 
-console.log(set);
-// console.log(Number(set));
-
-// const result = a + b + d;
-
-// console.log(result);
-// console.log(Number(result));
-
-const age = 24;
-const message = 'Poly is ' + age + ' years old!';
-
-console.log(message);
+console.log(makeTransaction(5, 3000));
+console.log(makeTransaction(3, 1000));
+console.log(makeTransaction(10, 500));
